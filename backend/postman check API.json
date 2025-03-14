@@ -1,0 +1,64 @@
+{
+    "info": {
+      "_postman_id": "12345-abcdef-67890",
+      "name": "Beer Order API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get Order Status",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/order",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["order"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Add Order",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\": \"Corona\", \"quantity\": 3}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/order",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["order"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Stock Status",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/stock",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["stock"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
