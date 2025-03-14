@@ -39,7 +39,7 @@ describe("OrdersPage", () => {
 
   it("renders the title", () => {
     render(<OrdersPage />);
-    expect(screen.getByText("Your Cometa Order")).toBeInTheDocument();
+    expect(screen.getByText("Tu orden Cometa")).toBeInTheDocument();
   });
 
   it("shows loading message when loading is true", () => {
@@ -50,7 +50,7 @@ describe("OrdersPage", () => {
     });
 
     render(<OrdersPage />);
-    expect(screen.getByText("Loading order...")).toBeInTheDocument();
+    expect(screen.getByText("Cargando orden...")).toBeInTheDocument();
   });
 
   it("displays an error message when an error occurs", () => {
@@ -61,7 +61,7 @@ describe("OrdersPage", () => {
     });
 
     render(<OrdersPage />);
-    expect(screen.getByText("Error loading order")).toBeInTheDocument();
+    expect(screen.getByText("Hubo un error al cargar la orden.")).toBeInTheDocument();
   });
 
   it("renders OrderSummary when there is a valid order", () => {
